@@ -80,7 +80,7 @@ export default function CotacaoForm() {
               <h3>Resultados:</h3>
               {cotacoes.map((item, index) => (
                 <Box key={index} sx={{ mb: 2, p: 1, border: '1px solid #ccc', borderRadius: 1 }}>
-                  <div><strong>data:</strong> {new Date(item.timestamp * 1000).toLocaleDateString()}</div>
+                  <div><strong>Data:</strong> {new Date(item.timestamp * 1000).toLocaleDateString()}</div>
                   <div><strong>Compra:</strong> R$ {item.bid}</div>
                   <div><strong>Venda:</strong> R$ {item.ask}</div>
                   <div><strong>Alta:</strong> R$ {item.high}</div>
